@@ -56,7 +56,7 @@ ul li:hover{
     color: white;
 }
 
-/*Style the product*/
+/*Style the card product */
 h4{
   text-align: center;
 }
@@ -96,4 +96,36 @@ h4{
   opacity: 0.7;
 }
 
+/*Style the footer*/
+.footer{
+  background-color: #000;
+}
+.footer h3{
+text-align: center;
+color: white;
+}
+.footer p{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: 0.7px;
+  color: white;
+}
 
+.footer ul li {
+  font-size: 30px;
+  background-color:#333;
+  border-radius: 20px;
+}
+.footer li{
+  color: white;
+}
+.links h5{
+display: inline;
+margin: 20px;
+border: 1px solid white;
+color: white;
+border-radius: 20px;
+}
+.links a,p{
+  text-decoration: none;
+  text-align: center;
+}

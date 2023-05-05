@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="../Css/gallery.css">
+</head>
+<body>
+    <div style="text-align:center">
+        <h2>Welcome to our  Gallery</h2>
+        <p>Click to see </p>
+      </div>
+      
+      <!-- The four columns -->
+      <div class="row">
+        <div class="column">
+          <img src="../Images/2018-Toyota-4Runner.jpeg" alt="Toyota" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="../Images/2018-toyota-corolla-l-sedan-angular-front.webp" alt="Corolla" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="../Images/camry.jpeg" alt="Camry" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="../Images/ford.jpg" alt="Ford" style="width:100%" onclick="myFunction(this);">
+        </div>
+        
+
+
+      </div>
+      
+      <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext"></div>
+      </div>
+      
+      <script>
+      function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+      }
+      </script>
+</body>
+</html>
